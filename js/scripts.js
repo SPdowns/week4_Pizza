@@ -2,13 +2,8 @@
 function Pizza(size, cheese) {
   this.size = size;
   this.cheese = cheese;
-  this.toppings = [];
+  this.toppings = piztoppings;
 }
-
-function Toppings() {
-  this.pepperoni = pepperoni;
-  this.olives = olives;
-  this.mushrooms = mushrooms;
 }
 console.log(Toppings)
 Pizza.prototype.calcPrice = function (){
@@ -37,15 +32,13 @@ $(document).ready(function(){
   var size = $("input[name=size]:checked").val();
   var cheese = $("input[name=cheese]:checked").val();
 
-  var pepperoni = $("#pepperoni:checked").val();
-  var olives = $("#olives:checked").val();
-  var mushrooms = $("#mushrooms:checked").val();
+  var pepperoni = $("input[name=pepperoni]:checked");
+  var olives = $("input[name=olives]:checked");
+  var mushrooms = $("input[name=mushrooms]:checked");
 
-  var toppings = new Toppings(pepperoni, olives, mushrooms)
-  console.log(toppings)
+  var pizToppings = new Toopings(pepperoni, olives, mushrooms)
   var calcPizza = new Pizza(size, cheese, toppings)
   calcPizza.calcPrice();
   displayPizzaOrder(calcPizza)
-  })
-
+  }
 });
