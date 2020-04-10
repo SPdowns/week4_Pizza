@@ -2,6 +2,7 @@
 function Pizza(size, cheese) {
   this.size = size;
   this.cheese = cheese;
+  this.price = 10;
 }
 
 Pizza.prototype.calcPrice = function (){
@@ -12,7 +13,7 @@ Pizza.prototype.calcPrice = function (){
   return price;
 }
 function displayPizzaOrder(pizza) {
-var displayMyPizza = "<p>Hey, Heres a " + pizza.size + " " + pizza.cheese + " Pizza for </p>";
+var displayMyPizza = "<p>Hey, Heres a " + pizza.size + " " + pizza.cheese + " Pizza for " + pizza.calcPrice() + "</p>";
 $("#output-final-pizza").html(displayMyPizza);
 console.log(displayMyPizza)
 }
