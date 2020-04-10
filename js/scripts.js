@@ -4,8 +4,10 @@ function Pizza() {
   this.size = []
 }
 
-Pizza.prototype.sizeprice = function () {
+Pizza.prototype.size = function () {
+  if this.size === large += 2 
 }
+
 
 //front end
 
@@ -13,7 +15,7 @@ $(document).ready(function(){
   var finalPizza = new Pizza();
   $('#form-group').submit(function(event){
   event.preventDefault();
-  var pizzaSize = $('#size').val();
+  var pizzaSize = $('input #size').val();
   console.log(finalPizza)
   })
 });
