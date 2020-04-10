@@ -3,10 +3,6 @@ function Order() {
   this.price = 10
 }
 
-
-// Pizza.prototype.size = function () {
-//   if size === large += 2 
-// }
 function Pizza(price) {
   this.size = size;
 }
@@ -20,7 +16,7 @@ $("#output-final-pizza").append(displayMyPizza);
 $(document).ready(function(){
   $('#pizza-form-id').submit(function(event){
   event.preventDefault();
-  var size = $('input.size').val();
+  var size = $("input[name=size]:checked").val();
   console.log(size)
   })
 
