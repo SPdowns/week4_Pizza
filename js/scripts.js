@@ -1,29 +1,27 @@
 //back end pizza
 function Order() {
-  this.size = size
+  this.price = 10
 }
-console.log(Pizza)
+
 
 // Pizza.prototype.size = function () {
 //   if size === large += 2 
 // }
 function Pizza(price) {
-  this.price = 10;
+  this.size = size;
 }
 
 function displayPizzaOrder(pizza) {
-var displayMyPizza = "<p>Hey, Heres a " + pizza.size + "</p>";
-$("#output-final-pizza").html(displayMyPizza);
-console.log("line 18", displayMyPizza)
+var displayMyPizza = "'<p>Hey, Heres' a " + pizza.size + "</p>";
+$("#output-final-pizza").append(displayMyPizza);
 }
-
 //front end
 
 $(document).ready(function(){
   $('#pizza-form-id').submit(function(event){
   event.preventDefault();
-  var pizzaSize = $('input#size').val();
-  
-  console.log(pizzaSize)
+  var size = $('input.size').val();
+  console.log(size)
   })
+
 });
