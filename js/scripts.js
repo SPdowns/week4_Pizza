@@ -2,14 +2,22 @@
 function Pizza(size, cheese) {
   this.size = size;
   this.cheese = cheese;
-  this.price = 10;
+  this.topping = []
+}
+
+function Toppings() {
+  this.pepperoni = pepperoni;
+  this.olive = olive;
+  this.mushroom = mushroom;
 }
 
 Pizza.prototype.calcPrice = function (){
   var price = 10;
-  if (this.cheese === "Extra Cheese") {
+  if (this.size === "Small") {
+    price -= 3
+  } if (this.size === "Large" || this.cheese === "Extra Cheese") {
     price += 3
-  }
+  } 
   return price;
 }
 function displayPizzaOrder(pizza) {
@@ -17,6 +25,8 @@ var displayMyPizza = "<p>Hey, Heres a " + pizza.size + " " + pizza.cheese + " Pi
 $("#output-final-pizza").html(displayMyPizza);
 console.log(displayMyPizza)
 }
+
+
 //front end
 
 $(document).ready(function(){
