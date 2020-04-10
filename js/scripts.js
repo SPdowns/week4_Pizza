@@ -15,9 +15,11 @@ Pizza.prototype.calcPrice = function (){
   var price = 10;
   if (this.size === "Small") {
     price -= 3
-  } if (this.size === "Large" || this.cheese === "Extra Cheese") {
+  } if (this.size === "Large") {
     price += 3
-  } 
+  } if (this.cheese === "Extra Cheese") {
+    price += 3
+  }
   return price;
 }
 function displayPizzaOrder(pizza) {
