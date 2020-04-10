@@ -6,3 +6,5 @@ function Pizza() {
   //front end
   $(document).ready(function(){
     event.preventDefault();
+    $('#form-group').submit(function(event){
+    var size = $("#size").val();
