@@ -1,6 +1,6 @@
 //back end pizza
 function Order() {
-  this.size = []
+  this.size = size
 }
 console.log(Pizza)
 
@@ -11,12 +11,16 @@ function Pizza(price) {
   this.price = 10;
 }
 
-function displayPizzaOrder
+function displayPizzaOrder(pizza) {
+var displayMyPizza = "<p>Hey, Heres a " + pizza.size + "</p>";
+$("#output-final-pizza").html(displayMyPizza);
+console.log("line 18", displayMyPizza)
+}
+
 //front end
 
 $(document).ready(function(){
-  var finalPizza = new Pizza(pizzaSize);
-  $('#form-group').submit(function(event){
+  $('#pizza-form-id').submit(function(event){
   event.preventDefault();
   var pizzaSize = $('input#size').val();
   
