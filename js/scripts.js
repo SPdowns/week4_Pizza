@@ -1,4 +1,8 @@
-function Pizza(cheese, peperoni, olives) {
-  this.cheese = cheese;
-  this.peperoni = peperoni;
-  this.olives = olives;
+//back end pizza
+function Pizza() {
+  this.size = [];
+
+
+  //front end
+  $(document).ready(function(){
+    event.preventDefault();
