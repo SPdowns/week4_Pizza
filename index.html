@@ -11,38 +11,49 @@
   </head>
   <body>
     <div class="container">
-      <h2>Pizza</h2>
-      <div class="col-md-6">
-        <form id="pizza-form-id">
-        <h3>Select Pizza Toppings</h3>
-        <h3>Size</h3>
-        <div id="size">
-          <input type="radio" name="size" value="Small">
-          <label for="small">Small</label><br>
-          <input type="radio" name="size" value="Medium">
-          <label for="med">Medium</label><br>
-          <input type="radio" name="size" value="Large">
-          <label for="lrg">Large</label><br>
-        </div>
-        <h3>Cheese</h3>
-        <div id="cheese">
-          <input type="radio" name="cheese" value="No Cheese">
-          <label for="none">None</label><br>
-          <input type="radio" name="cheese" value="Regular Cheese">
-          <label for="reg">Regular</label><br>
-          <input type="radio" name="cheese" value="Extra Cheese">
-          <label for="xtra">Extra</label><br>
-        </div>
-        <h3>Toppings</h3>
-        <input type="checkbox" id="pepperoni" name="Pepperoni" value="Pepperoni">
-        <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="olives" name="Olives" value="Olives">
-        <label for="Olives">Olives</label><br>
-        <input type="checkbox" id="mushrooms" name="Mushrooms" value="Mushrooms">
-        <label for="Mushrooms">Mushrooms</label><br>
-        <input type="submit">
-        </form>
-        <div id="output-final-pizza">heres something</div>
+      <div class="jumbotron">
+        <h1>Pizza</h1>
       </div>
+      <form id="pizza-form-id">
+        <h3 class="small-title">Select Pizza Toppings</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Size</h3>
+            <div id="size">
+              <input type="radio" name="size" value="Small">
+              <label for="small">Small</label><br>
+              <input type="radio" name="size" value="Medium">
+              <label for="med">Medium</label><br>
+              <input type="radio" name="size" value="Large">
+              <label for="lrg">Large</label><br>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Cheese</h3>
+            <div id="cheese">
+              <input type="radio" name="cheese" value="No Cheese">
+              <label for="none">None</label><br>
+              <input type="radio" name="cheese" value="Regular Cheese">
+              <label for="reg">Regular</label><br>
+              <input type="radio" name="cheese" value="Extra Cheese">
+              <label for="xtra">Extra</label><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Toppings</h3>
+            <input type="checkbox" id="pepperoni" name="Pepperoni" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="olives" name="Olives" value="Olives">
+            <label for="Olives">Olives</label><br>
+            <input type="checkbox" id="mushrooms" name="Mushrooms" value="Mushrooms">
+            <label for="Mushrooms">Mushrooms</label><br>
+            <input type="submit">
+          </div>
+        </div>
+      </form>
+      <div id="output-final-pizza">heres something</div>
+    </div>
   </body>
 </html>
