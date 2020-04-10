@@ -1,11 +1,12 @@
 //back end pizza
 function Pizza() {
   this.price = 10;
-  this.size = {small, medium, large};
+  this.size = []
 }
-// Pizza.prototype.sizeprice = function () {
-  
-// }
+
+Pizza.prototype.sizeprice = function () {
+}
+
 //front end
 
 $(document).ready(function(){
@@ -13,6 +14,6 @@ $(document).ready(function(){
   $('#form-group').submit(function(event){
   event.preventDefault();
   var pizzaSize = $('#size').val();
-  console.log(pizzaSize)
+  console.log(finalPizza)
   })
 });
