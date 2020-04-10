@@ -3,13 +3,13 @@ function Order() {
   this.price = 10
 }
 
-function Pizza(price) {
+function Pizza(size) {
   this.size = size;
 }
 
 function displayPizzaOrder(pizza) {
-var displayMyPizza = "'<p>Hey, Heres' a " + pizza.size + "</p>";
-$("#output-final-pizza").append(displayMyPizza);
+var displayMyPizza = "<p>Hey, Heres a " + pizza.size + "</p>";
+$("#output-final-pizza").html(displayMyPizza);
 }
 //front end
 
@@ -17,7 +17,9 @@ $(document).ready(function(){
   $('#pizza-form-id').submit(function(event){
   event.preventDefault();
   var size = $("input[name=size]:checked").val();
-  console.log(size)
+
+  var stepLastPizza = 
+  displayPizzaOrder(size)
   })
 
 });
