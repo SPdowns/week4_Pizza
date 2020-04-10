@@ -2,7 +2,7 @@
 function Pizza() {
   this.price = 10;
   this.size = {small, medium, large};
-
+}
 // Pizza.prototype.sizeprice = function () {
   
 // }
