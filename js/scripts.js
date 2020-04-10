@@ -4,7 +4,7 @@ function Pizza(size, cheese) {
   this.cheese = cheese;
   this.topping = [];
 }
-console.log(Pizza)
+
 function Toppings() {
   this.pepperoni = pepperoni;
   this.olive = olive;
@@ -37,12 +37,12 @@ $(document).ready(function(){
   var size = $("input[name=size]:checked").val();
   var cheese = $("input[name=cheese]:checked").val();
 
-  var pepperoni = $("#pepperoni").checked();
-  console.log(pepperoni)
+  var pepperoni = $("#pepperoni:checked").val();
+  var olive = $("#olive:checked").val();
+  var mushroom = $("#mushroom:checked").val();
 
-  var olive = $("").val();
-  var mushroom = $("").val();
   var toppings = new Toppings(pepperoni, olive, mushroom)
+  console.log(toppings)
   var calcPizza = new Pizza(size, cheese, toppings)
   calcPizza.calcPrice();
   displayPizzaOrder(calcPizza)
