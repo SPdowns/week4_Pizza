@@ -2,6 +2,7 @@
 function Pizza(size, cheese) {
   this.size = size;
   this.cheese = cheese;
+  
   this.pepperoni = pepperoni;
   this.olives = olives;
   this.mushrooms = mushrooms;
